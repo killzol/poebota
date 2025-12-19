@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Year Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-decor"></div>
+
+<div class="snow"></div>
+
+<div id="login" class="screen">
+    <div class="lights"></div>
+    <h1>🎄 NEW YEAR QUIZ 🎄</h1>
+    <input id="nick" placeholder="Введите ник">
+    <button onclick="start()">Начать</button>
+</div>
+
+<div id="quiz" class="screen hidden">
+    <div class="lights"></div>
+    <div id="timer"></div>
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+    <div id="result" class="hidden"></div>
+
+</div>
+
+<div id="result" class="screen hidden">
+    <div class="lights"></div>
+    <h2>❄️ Результат ❄️</h2>
+    <p id="score"></p>
+    <button onclick="location.reload()">Заново</button>
+</div>
+
+<div id="goodEnd" class="screen hidden">
+    <div class="lights"></div>
+    <h2>🎄 Поздравляем!</h2>
+    <p id="goodText"></p>
+    <button onclick="location.reload()">Сыграть ещё</button>
+</div>
+
+<div id="badEnd" class="screen hidden">
+    <div class="lights"></div>
+    <h2>🔥 Провал!</h2>
+    <p id="badText"></p>
+    <button onclick="location.reload()">Попробовать снова</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
